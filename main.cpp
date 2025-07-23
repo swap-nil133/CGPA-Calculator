@@ -38,10 +38,11 @@ class Student{
         return cgpa;
     }
 
-    void display(){
+    float display(){
         cout << "Student Name :" << name << "\n";
         float cgpa=calculate_cgpa();
         cout << "CGPA :" << cgpa << "\n";
+        return cgpa;
     }
 };
 
@@ -51,25 +52,35 @@ int main(){
 
     string student_name;
     int num_of_sub;
-    cout << "Enter Student Name:";
+    cout << "Enter Student Name:" << endl;
     getline(cin,student_name);
-    cout << "Enter total number of subjects:";
+    cout << "Enter total number of subjects:" << endl;
     cin >> num_of_sub;
     Student student(student_name);
     for(int i=1;i<=num_of_sub;i++){
         string sub_name;
         int credit;
         float gradepoint;
-        cout << "Enter Subject Name :";
+        cout << "Enter Subject Name :" << endl;
         cin.ignore();
         getline(cin,sub_name);
-        cout << "Enter Sub Credit :";
+        cout << "Enter Sub Credit :" << endl;
         cin >> credit;
-        cout << "Enter Your Grade :";
+        cout << "Enter Your Grade :" << endl;
         cin >> gradepoint;
         student.addsub(sub_name,credit,gradepoint);
     }
-    student.display();
+    float cgpa=student.display();
+    if(cgpa>=3.80)
+        cout << "You are a Golden Student" << endl;
+    else if(cgpa>=3.50)
+        cout << "You are a Silver Student" << endl;
+    else if(cgpa>=3.00)
+        cout << "You are a Bronze Student" << endl;
+    else if(cgpa>=2.00)
+        cout << "You are a Normal Student" << endl;
+    else
+        cout << "You are a Failed Student" << endl;
     
 
     return 0;
