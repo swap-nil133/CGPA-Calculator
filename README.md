@@ -47,4 +47,4 @@ CGPA : 3.85
 
 ## 🔗 Live Demo
 
-Try the live CGPA Calculator here: [CGPA-Calculator]([CGPA-Calculator](https://replit.com/@swapnil133/CGPA-Calculator))
+Try the live CGPA Calculator here: [CGPA_Calculator](https://replit.com/@swapnil133/CGPA-Calculator)
