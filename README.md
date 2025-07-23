@@ -42,3 +42,9 @@ Enter Your Grade : 4
 
 Student Name : Swapnil Sarker
 CGPA : 3.85
+
+---
+
+## 🔗 Live Demo
+
+Try the live CGPA Calculator here: [https://swapnil133.repl.co](https://swapnil133.repl.co)
